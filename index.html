@@ -6,12 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio site</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="columns-2 bg-white dark:bg-zinc-900">
-      <h1 class="text-3xl font-bold underline text-center py-10 text-cyan-500">
-        Hello world!
-      </h1>
+    <div
+      class="app-contianer md:flex box-border px-1 py-24 gap-3 bg-zinc-900 md:columns-3"
+    >
+      <!-- menu -->
+      <div class="md:flex-none md:w-96">
+        <section class="short-info">
+          <div
+            class="border-solid border border-zinc-600 rounded-3xl text-white h-2/4 p-12"
+          >
+            <div class="short-info__name flex justify-between">
+              <div class="font-bold text-3xl">Łukasz</div>
+              <div class="font-regular text-sm">
+                <div>Junior Front-End</div>
+                <div class="text-end">Developer</div>
+              </div>
+            </div>
+            <div class="short-info__image w-full flex justify-center grayscale">
+              <img
+                class="rounded-3xl w-full my-5"
+                src="./assets/me.jpg"
+                alt=""
+              />
+            </div>
+            <div class="my-3 text-center">
+              <p class="text-lg">lukaszsztormowski@gmail.com</p>
+              <p class="text-2xl">Base in Sopot, PL</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- content -->
+      <div class="grow bg-green-500 text-center text-white py-5">
+        <p class="content">Content</p>
+      </div>
+      <!-- menu bar -->
+      <div class="flex-none md:w-40 bg-yellow-500 text-center text-white p-y6">
+        menu bar!
+      </div>
     </div>
   </body>
 </html>

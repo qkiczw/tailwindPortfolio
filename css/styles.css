@@ -7,3 +7,7 @@ body {
 .app-contianer {
   min-height: 100dvh;
 }
+
+.content {
+  min-height: 200dvh;
+}

@@ -16,14 +16,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div
-      class="app-contianer md:flex box-border px-1 py-24 gap-3 bg-zinc-900 md:columns-3"
-    >
+    <div class="app-contianer box-border bg-zinc-900">
       <!-- menu -->
-      <div class="md:flex-none md:max-w-sm">
+      <div class="left-column">
         <section class="short-info">
           <div
-            class="border-solid border border-zinc-600 rounded-3xl text-white h-2/4 p-12"
+            class="border-solid border border-zinc-600 rounded-3xl text-white p-12"
           >
             <div class="short-info__name flex justify-between">
               <div class="font-bold text-3xl">Łukasz</div>
@@ -70,26 +68,30 @@
         </section>
       </div>
       <!-- content -->
-      <div class="content grow bg-green-500 text-center text-white py-5">
-        <p>Content</p>
+      <div class="center text-white">
+        <p class="">Content</p>
       </div>
       <!-- menu bar -->
-      <div class="flex-none md:w-40 text-white hidden md:flex justify-center items-center">
-        <nav class="flex justify-center">
+      <div class="right-column flex justify-center items-center">
+        <nav class="flex justify-center fixed">
           <ul
-            class="border-solid border border-zinc-600 rounded-full flex flex-col gap-4 py-5 px-3"
+            class="border-solid border border-zinc-600 rounded-full flex flex-col gap-4 py-5 px-3 text-white"
           >
             <a href="#"
-              ><li class="text-center text-xl"><i class="fa-solid fa-house"></i></li
+              ><li class="text-center text-xl">
+                <i class="fa-solid fa-house"></i></li
             ></a>
             <a href="#"
-              ><li class="text-center text-xl"><i class="fa-regular fa-circle-user"></i></i></li
+              ><li class="text-center text-xl">
+                <i class="fa-regular fa-circle-user"></i></li
             ></a>
             <a href="#"
-              ><li class="text-center text-xl"><i class="fa-solid fa-cube"></i></i></li
+              ><li class="text-center text-xl">
+                <i class="fa-solid fa-cube"></i></li
             ></a>
             <a href="#"
-              ><li class="text-center text-xl"><i class="fa-regular fa-envelope"></i></li
+              ><li class="text-center text-xl">
+                <i class="fa-regular fa-envelope"></i></li
             ></a>
           </ul>
         </nav>

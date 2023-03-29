@@ -27,17 +27,25 @@ body {
 @media screen and (min-width: 1024px) {
   .app-contianer {
     flex-direction: row;
-    /* justify-content: space-between; */
   }
   .left-column {
     background-color: yellow;
     width: 25%;
     padding: 0 10px;
   }
+  .short-info {
+    position: fixed;
+    max-width: 25%;
+    left: 0;
+  }
   .center {
     width: 65%;
+    height: 200vh;
   }
   .right-column {
+    position: fixed;
+    top: 40%;
+    right: 0;
     width: 10%;
   }
 }

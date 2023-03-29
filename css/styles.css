@@ -23,6 +23,17 @@ body {
 
 .right-column {
 } */
+.icon {
+  position: relative;
+}
+.icon:hover:before {
+  content: attr(data-name);
+  position: absolute;
+  left: -10px;
+  background-color: blue;
+  left: -100px;
+  color: white;
+}
 
 @media screen and (min-width: 1024px) {
   .app-contianer {

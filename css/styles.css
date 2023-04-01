@@ -26,13 +26,26 @@ body {
 .icon {
   position: relative;
 }
-.icon:hover:before {
+/* .icon:hover:before {
   content: attr(data-name);
   position: absolute;
   left: -10px;
   background-color: blue;
   left: -100px;
   color: white;
+} */
+
+.icon-label {
+  position: absolute;
+  left: -125%;
+  opacity: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.link:hover > .icon-label {
+  background-color: aquamarine;
+  opacity: 1;
+  left: -205%;
 }
 
 @media screen and (min-width: 1024px) {

@@ -18,17 +18,23 @@
   </head>
   <body>
     <div
-      class="app-container relative flex flex-row justify-between w-full h-dvh bg-neutral-800 text-white"
+      class="app-container relative block md:flex md:flex-row justify-between w-full h-dvh bg-neutral-800 text-white"
     >
       <!-- left column -->
-      <div class="column__left fixed top-0 w-3/12 h-dvh bg-neutral-600">
-        left
+      <div
+        class="column__left flex justify-center items-start md:fixed md:top-0 w-full md:w-3/12 h-dvh bg-neutral-600"
+      >
+        <div
+          class="profile-card w-11/12 min-h-96 sm:m-4 xl:m-10 border border-white rounded-3xl"
+        >
+          Profile info
+        </div>
       </div>
       <!-- center main content -->
       <div class="column__center">center</div>
       <!-- right column with nav -->
       <div
-        class="column__right fixed top-0 right-0 w-1/12 h-dvh bg-neutral-600"
+        class="column__right hidden md:flex fixed top-0 right-0 w-1/12 h-dvh bg-neutral-600"
       >
         right
       </div>

@@ -22,10 +22,10 @@
     >
       <!-- left column -->
       <div
-        class="column__left flex justify-center items-start w-full md:w-3/12 h-dvh"
+        class="column__left flex justify-center items-start lg:items-center w-full md:w-3/12 h-dvh"
       >
         <div
-          class="profile-card w-full md:w-1/5 min-h-96 md:fixed md:top-0 m-4 p-6 border border-neutral-500 rounded-3xl"
+          class="profile-card w-full md:w-1/5 min-h-96 md:fixed m-4 p-6 border border-neutral-500 rounded-3xl"
         >
           <div
             class="profile-card__title flex flex-col xl:flex-row justify-between"
@@ -84,9 +84,39 @@
       </div>
       <!-- right column with nav -->
       <div
-        class="column__right hidden md:flex justify-center items-center right-0 w-1/12 h-dvh bg-neutral-600"
+        class="column__right hidden md:flex justify-center items-center right-0 w-1/12 h-dvh"
       >
-        <nav class="fixed border border-neutral-500 rounded-3xl">nav</nav>
+        <nav
+          class="fixed text-neutral-500 border border-neutral-500 rounded-full py-6 px-5"
+        >
+          <ul class="flex flex-col justify-center items-center gap-4">
+            <li
+              class="transition duration-300 ease-in-out 150ms hover:text-emerald-500"
+            >
+              <a href="#"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li
+              class="transition duration-300 ease-in-out 150ms hover:text-emerald-500"
+            >
+              <a href="#"><i class="fa-solid fa-folder-closed"></i></a>
+            </li>
+            <li
+              class="transition duration-300 ease-in-out 150ms hover:text-emerald-500"
+            >
+              <a href="#"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li
+              class="transition duration-300 ease-in-out 150ms hover:text-emerald-500"
+            >
+              <a href="#"> <i class="fa-solid fa-file-code"></i></a>
+            </li>
+            <li
+              class="transition duration-300 ease-in-out 150ms hover:text-emerald-500"
+            >
+              <a href="#"> <i class="fa-solid fa-envelope"></i></a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
 

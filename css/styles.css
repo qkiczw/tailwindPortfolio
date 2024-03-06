@@ -6,6 +6,7 @@
 
 :root {
   --emerald-500: #10b981;
+  --neutral-800: #262626;
 }
 
 body {
@@ -14,4 +15,27 @@ body {
 
 .column__center {
   height: 2000px;
+}
+
+/* Nav tooltip code */
+.nav__item {
+  position: relative;
+}
+.nav__item::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: max-content;
+  max-width: 100px;
+  padding: 0.3rem 0.7rem;
+  background-color: var(--emerald-500);
+  color: var(--neutral-800);
+  border-radius: 1rem;
+  opacity: 0;
+  transform: translateX(-100%) translateY(-20%) scale(0.5);
+  transform-origin: right;
+  transition: all ease-in-out 150ms;
+}
+.nav__item:hover::before {
+  opacity: 1;
+  transform: translateX(-150%) translateY(-20%) scale(1);
 }

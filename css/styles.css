@@ -25,8 +25,7 @@ body {
   position: absolute;
   content: attr(data-tooltip);
   width: max-content;
-  max-width: 100px;
-  padding: 0.3rem 0.7rem;
+  padding: 0.4rem 1rem;
   background-color: var(--emerald-500);
   color: var(--neutral-800);
   border-radius: 1rem;
@@ -38,4 +37,17 @@ body {
 .nav__item:hover::before {
   opacity: 1;
   transform: translateX(-150%) translateY(-20%) scale(1);
+}
+
+/* test code for for nav items active colors */
+
+.section__title {
+  position: relative;
+  top: 1200px;
+  color: red;
+  font-size: 3rem;
+}
+
+.icon--active {
+  color: var(--emerald-500);
 }

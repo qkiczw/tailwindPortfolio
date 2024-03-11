@@ -11,6 +11,7 @@
 
 body {
   font-family: "Inter", sans-serif;
+  background-color: var(--neutral-800);
 }
 
 .column__center {
@@ -41,13 +42,36 @@ body {
 
 /* test code for for nav items active colors */
 
-.section__title {
+main {
   position: relative;
-  top: 1200px;
+}
+.section__title {
   color: red;
   font-size: 3rem;
 }
 
 .icon--active {
   color: var(--emerald-500);
+  transition: all 250ms ease-in-out;
+}
+
+#home {
+  position: relative;
+  top: 100px;
+}
+#portfolio {
+  position: relative;
+  top: 1500px;
+  color: yellow;
+}
+
+#about-me {
+  position: relative;
+  top: 2500px;
+  color: yellow;
+}
+#skills {
+  position: relative;
+  top: 3200px;
+  padding-bottom: 1000px;
 }

@@ -14,10 +14,6 @@ body {
   background-color: var(--neutral-800);
 }
 
-.column__center {
-  height: 2000px;
-}
-
 /* Nav tooltip code */
 .nav__item {
   position: relative;
@@ -41,7 +37,10 @@ body {
 }
 
 /* test code for for nav items active colors */
-
+section {
+  position: relative;
+  min-height: 100dvh;
+}
 main {
   position: relative;
 }
@@ -56,22 +55,13 @@ main {
 }
 
 #home {
-  position: relative;
-  top: 100px;
 }
 #portfolio {
-  position: relative;
-  top: 1500px;
   color: yellow;
 }
 
 #about-me {
-  position: relative;
-  top: 2500px;
   color: yellow;
 }
 #skills {
-  position: relative;
-  top: 3200px;
-  padding-bottom: 1000px;
 }

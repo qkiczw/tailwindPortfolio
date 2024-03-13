@@ -2,23 +2,25 @@ console.log("Hello World!");
 
 // nav active icon code
 const navIconColorHandle = () => {
-  const sectionTitles = document.querySelectorAll(".section__title");
+  const sections = document.querySelectorAll("section");
   const navIcons = document.querySelectorAll(".nav__item");
 
-  const scrollPosition = window.scrollY;
-  const scrollThreshold = window.innerHeight - 150;
+  sections.forEach((section) => {
+    const scrollPosFromTheTop = window.scrollY;
+    const sectionPosFromTheTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute("id");
 
-  //   Napisz taki kod żeby sprawdzało każdy section title od góry i jeżeli
-  //   jakiś section ma mniej nic scroll treshold to ikona o takim samym dataset robi się zielona!!!
-  sectionTitles.forEach((title) => {
-    const titleFromTheTop = title.getBoundingClientRect().top;
-
-    if (titleFromTheTop > 0 && titleFromTheTop < scrollThreshold) {
-      let activeElement = document.querySelector(`.` + `${title.id}`);
-      activeElement.classList.add("icon--active");
-    } else if (titleFromTheTop > -100) {
-      let activeElement = document.querySelector(`.` + `${title.id}`);
-      activeElement.classList.remove("icon--active");
+    if (
+      scrollPosFromTheTop >= sectionPosFromTheTop &&
+      scrollPosFromTheTop < sectionPosFromTheTop + sectionHeight
+    ) {
+      navIcons.forEach((icon) => {
+        icon.classList.remove("icon--active");
+        document
+          .querySelector(`a[href*=${sectionId}]`)
+          .classList.add("icon--active");
+      });
     }
   });
 };

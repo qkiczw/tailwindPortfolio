@@ -95,37 +95,177 @@
         <main>
           <section id="home" class="min-h-dvh">
             <h2
-              class="section__title w-max font-thin border border-neutral-500 rounded-3xl px-3 py-1 mt-10"
+              data-aos="fade-up"
+              class="section__title w-max font-thin border border-neutral-500 rounded-3xl px-3 py-1 ml-4 md:ml-0 mt-20"
             >
               <i class="fa-solid fa-house mr-1 text-neutral-500"></i> Home
             </h2>
           </section>
           <section id="portfolio" class="min-h-dvh">
             <h2
-              class="section__title w-max font-thin border border-neutral-500 rounded-3xl px-3 py-1 mt-10"
+              data-aos="fade-up"
+              class="section__title w-max font-thin border border-neutral-500 rounded-3xl px-3 py-1 ml-4 md:ml-0 mt-10 mb-20"
             >
-              My Portfolio
+              <i class="fa-solid fa-folder-closed mr-1 text-neutral-500"></i> My
+              Portfolio
             </h2>
+            <div
+              class="projects__container flex flex-row flex-wrap justify-center gap-4"
+            >
+              <!-- project--big -->
+              <div
+                data-aos="fade-up"
+                class="project--big relative w-full p-2 md:p-0"
+              >
+                <a
+                  href="https://magenta-profiterole-ffee2c.netlify.app/"
+                  target="_blank"
+                >
+                  <img
+                    src="./assets/portfolio-fakeflix.jpg"
+                    class="relative z-0 rounded-3xl grayscale hover:grayscale-0 duration-300 ease-in-out"
+                    alt="fakeflix"
+                    loading="lazy"
+                  />
+                </a>
+                <h3 class="absolute z-1 top-5 left-5 text-2xl">fakeflix</h3>
+                <ul class="absolute z-1 bottom-5 left-5 flex gap-4">
+                  <li
+                    class="grid place-items-center size-14 bg-white rounded-full"
+                  >
+                    <i class="fa-brands fa-html5 text-4xl text-neutral-800"></i>
+                  </li>
+                  <li
+                    class="grid place-items-center size-14 bg-white rounded-full"
+                  >
+                    <i class="fa-brands fa-css3 text-4xl text-neutral-800"></i>
+                  </li>
+                  <li
+                    class="grid place-items-center size-14 bg-white rounded-full"
+                  >
+                    <i class="fa-brands fa-react text-4xl text-neutral-800"></i>
+                  </li>
+                </ul>
+              </div>
+              <!-- row -->
+              <div class="projects__row flex flex-col md:flex-row gap-4">
+                <!-- project--half -->
+                <div
+                  data-aos="fade-up"
+                  class="project--half relative w-full md:w-1/2 p-2 md:p-0"
+                >
+                  <a href="#" target="_blank">
+                    <img
+                      src="./assets/portfolio-barwny.jpg"
+                      class="relative z-0 w-full rounded-3xl grayscale hover:grayscale-0 duration-300 ease-in-out"
+                      alt="Colorful dance"
+                      loading="lazy"
+                    />
+                  </a>
+                  <h3 class="absolute z-1 top-5 left-5 text-2xl">
+                    Colorful dance
+                  </h3>
+                  <ul class="absolute z-1 bottom-5 left-5 flex gap-4">
+                    <li
+                      class="grid place-items-center size-14 bg-white rounded-full"
+                    >
+                      <i
+                        class="fa-brands fa-html5 text-4xl text-neutral-800"
+                      ></i>
+                    </li>
+                    <li
+                      class="grid place-items-center size-14 bg-white rounded-full"
+                    >
+                      <i
+                        class="fa-brands fa-css3 text-4xl text-neutral-800"
+                      ></i>
+                    </li>
+                    <li
+                      class="grid place-items-center size-14 bg-white rounded-full"
+                    >
+                      <i
+                        class="fa-brands fa-wordpress text-4xl text-neutral-800"
+                      ></i>
+                    </li>
+                    <li
+                      class="grid place-items-center size-14 bg-white rounded-full"
+                    >
+                      <i class="fa-brands fa-js text-4xl text-neutral-800"></i>
+                    </li>
+                  </ul>
+                </div>
+                <!-- project--half -->
+                <div
+                  data-aos="fade-up"
+                  class="project--half relative w-full md:w-1/2 p-2 md:p-0"
+                >
+                  <a href="#" target="_blank">
+                    <img
+                      src="./assets/portfolio-odysseia.jpg"
+                      class="relative z-0 w-full rounded-3xl grayscale hover:grayscale-0 duration-300 ease-in-out"
+                      alt="Colorful dance"
+                      loading="lazy"
+                    />
+                  </a>
+                  <h3 class="absolute z-1 top-5 left-5 text-2xl">
+                    Odysseia Project
+                  </h3>
+                  <ul class="absolute z-1 bottom-5 left-5 flex gap-4">
+                    <li
+                      class="grid place-items-center size-14 bg-white rounded-full"
+                    >
+                      <i
+                        class="fa-brands fa-html5 text-4xl text-neutral-800"
+                      ></i>
+                    </li>
+                    <li
+                      class="grid place-items-center size-14 bg-white rounded-full"
+                    >
+                      <i
+                        class="fa-brands fa-css3 text-4xl text-neutral-800"
+                      ></i>
+                    </li>
+                    <li
+                      class="grid place-items-center size-14 bg-white rounded-full"
+                    >
+                      <i
+                        class="fa-brands fa-wordpress text-4xl text-neutral-800"
+                      ></i>
+                    </li>
+                    <li
+                      class="grid place-items-center size-14 bg-white rounded-full"
+                    >
+                      <i class="fa-brands fa-js text-4xl text-neutral-800"></i>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </section>
           <section id="about-me" class="min-h-dvh">
             <h2
-              class="section__title w-max font-thin border border-neutral-500 rounded-3xl px-3 py-1 mt-10"
+              data-aos="fade-up"
+              class="section__title w-max font-thin border border-neutral-500 rounded-3xl px-3 py-1 ml-4 md:ml-0 mt-40"
             >
-              About Me
+              <i class="fa-solid fa-user mr-1 text-neutral-500"></i> About Me
             </h2>
           </section>
           <section id="skills" class="min-h-dvh">
             <h2
-              class="section__title w-max font-thin border border-neutral-500 rounded-3xl px-3 py-1 mt-10"
+              data-aos="fade-up"
+              class="section__title w-max font-thin border border-neutral-500 rounded-3xl px-3 py-1 ml-4 md:ml-0 mt-40"
             >
-              My Skills
+              <i class="fa-solid fa-file-code mr-1 text-neutral-500"></i> My
+              Skills
             </h2>
           </section>
           <section id="contact" class="min-h-dvh">
             <h2
-              class="section__title w-max font-thin border border-neutral-500 rounded-3xl px-3 py-1 mt-10"
+              data-aos="fade-up"
+              class="section__title w-max font-thin border border-neutral-500 rounded-3xl px-3 py-1 ml-4 md:ml-0 mt-40"
             >
-              Conttact
+              <i class="fa-solid fa-folder-closed mr-1 text-neutral-500"></i>
+              Contact
             </h2>
           </section>
         </main>
@@ -136,6 +276,7 @@
       >
         <nav
           data-aos="fade-left"
+          data-aos-delay="300"
           class="fixed text-neutral-500 border border-neutral-500 rounded-full py-6 px-5"
         >
           <ul class="flex flex-col justify-center items-center gap-4">

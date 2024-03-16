@@ -1,3 +1,6 @@
+// animate on scroll livrart initialize code
+AOS.init();
+
 console.log("Hello World!");
 
 // nav active icon code

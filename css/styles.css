@@ -37,31 +37,16 @@ body {
 }
 
 /* test code for for nav items active colors */
-section {
+/* section {
   position: relative;
   min-height: 100dvh;
-}
+} */
+
 main {
   position: relative;
-}
-.section__title {
-  color: red;
-  font-size: 3rem;
 }
 
 .icon--active {
   color: var(--emerald-500);
   transition: all 250ms ease-in-out;
-}
-
-#home {
-}
-#portfolio {
-  color: yellow;
-}
-
-#about-me {
-  color: yellow;
-}
-#skills {
 }

@@ -1,6 +1,11 @@
 // animate on scroll livrart initialize code
 AOS.init();
 
+// menu mobile variables
+const menuMobileBtnOpen = document.querySelector(".nav-mobile__button__open");
+const menuMobileBtnClose = document.querySelector(".nav-mobile__button__close");
+const menuMobileMenu = document.querySelector(".nav-mobile__menu");
+
 // nav active icon code
 const navIconColorHandle = () => {
   const sections = document.querySelectorAll("section");
@@ -27,3 +32,12 @@ const navIconColorHandle = () => {
 };
 
 window.addEventListener("scroll", navIconColorHandle);
+
+// menu mobile code
+menuMobileBtnOpen.addEventListener("click", function () {
+  menuMobileMenu.classList.remove("hidden");
+});
+
+menuMobileBtnClose.addEventListener("click", function () {
+  menuMobileMenu.classList.add("hidden");
+});

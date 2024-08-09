@@ -35,6 +35,28 @@
           data-aos="fade-right"
           class="profile-card w-full md:w-1/5 min-h-96 md:fixed m-4 p-6 border border-neutral-500 rounded-3xl"
         >
+          <!-- menu mobile -->
+          <i
+            class="nav-mobile__button__open fa-solid fa-bars fa-2xl text-neutral-500 absolute top-10 right-5"
+          ></i>
+          <div
+            class="nav-mobile__container w-full absolute left-0 bg-neutral-800"
+          >
+            <nav class="nav-mobile__menu relative hidden h-dvh left-0">
+              <i
+                class="nav-mobile__button__close fa-regular fa-circle-xmark fa-2xl text-neutral-500 absolute top-5 right-5"
+              ></i>
+              <ul
+                class="nav-mobile__menu__list flex flex-col justify-start items-center gap-3 pt-10"
+              >
+                <li>Home</li>
+                <li>Projects</li>
+                <li>About Me</li>
+                <li>Skills</li>
+                <li>Contact</li>
+              </ul>
+            </nav>
+          </div>
           <div
             class="profile-card__title flex flex-col xl:flex-row justify-between"
           >

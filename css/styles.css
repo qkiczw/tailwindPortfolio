@@ -41,6 +41,16 @@ body {
   transform: translateX(-150%) translateY(-20%) scale(1);
 }
 
+/* mobile nav */
+.nav-mobile__menu__list {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(38, 38, 38, 1) 90%
+  );
+}
+
 /* test code for for nav items active colors */
 /* section {
   position: relative;
